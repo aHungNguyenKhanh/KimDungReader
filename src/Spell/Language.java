@@ -3,21 +3,7 @@ package Spell;
 import java.util.ArrayList;
 
 import Spell.Vietnamese.WordAnalyzer;
-import Spell.Vietnamese.VietNameseWordRules.ConsonantCandQUandKRule;
-import Spell.Vietnamese.VietNameseWordRules.ConsonantGandGHRule;
-import Spell.Vietnamese.VietNameseWordRules.ConsonantNGHandNGRule;
-import Spell.Vietnamese.VietNameseWordRules.ConsonantNRule;
-import Spell.Vietnamese.VietNameseWordRules.ConsonantRandGIRule;
-import Spell.Vietnamese.VietNameseWordRules.ConsonantSRule;
-import Spell.Vietnamese.VietNameseWordRules.ConsonantTRRule;
-import Spell.Vietnamese.VietNameseWordRules.IandYRule;
-import Spell.Vietnamese.VietNameseWordRules.LimitedToneRule;
-import Spell.Vietnamese.VietNameseWordRules.SpecialUWCase;
-import Spell.Vietnamese.VietNameseWordRules.ToneNumberRule;
-import Spell.Vietnamese.VietNameseWordRules.TonePositionRule;
-import Spell.Vietnamese.VietNameseWordRules.ValidCharacterRule;
-import Spell.Vietnamese.VietNameseWordRules.ValidConsonantRule;
-import Spell.Vietnamese.VietNameseWordRules.ValidVowelRule;
+import Spell.Vietnamese.VietNameseWordRules.*;
 
 public enum Language implements RuleLoader {
 	

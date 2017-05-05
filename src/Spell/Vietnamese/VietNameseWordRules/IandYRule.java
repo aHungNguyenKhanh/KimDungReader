@@ -37,8 +37,6 @@ public class IandYRule extends Rule {
 						return true;
 				return false;
 			}
-			else if(vowel.equals("I") && comp.consonant.equals(""))
-				return false;
 		}
 		
 			

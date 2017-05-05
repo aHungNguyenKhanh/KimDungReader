@@ -14,7 +14,7 @@ public class WordAnalyzer{
 	public ToneTable tone_table;
 	
 	// Singleton
-	public static WordAnalyzer get_instance(){
+	synchronized public static WordAnalyzer get_instance(){
 		if(instance == null){
 			instance = new WordAnalyzer();
 		}
@@ -30,7 +30,7 @@ public class WordAnalyzer{
 	}
 	
 	//return null if catch hit fail
-	private WordComponents get_cache(String key){
+	synchronized private WordComponents get_cache(String key){
 		
 		for(SoftReference<WordComponents> i : cache_pool){
 			if(i.get()!=null && i.get().word.toUpperCase().equals(key.toUpperCase())){
@@ -112,13 +112,18 @@ public class WordAnalyzer{
 		if(consonant.toString().equals("QU") && vowel.toString().equals("UI"))
 			vowel.replace(1, 2, "Y");
 		
+		if(vowel.toString().equals("ÊNG") && consonant.toString().equals("GI")){
+			vowel.insert(0, 'I');
+			tone_pos++;
+		}
+			
 		WordComponents comps = new WordComponents(upper_case, new String(consonant), new String(vowel), tone_pos, tone);
 		add(comps);
 		return comps;
 	}
 	
 	public static void main(String[] args) {
-		WordComponents x = WordAnalyzer.get_instance().analyze("Quỳnh");
+		WordComponents x = WordAnalyzer.get_instance().analyze("giếng");
 		
 		if( x != null){
 			System.out.println(x.word);

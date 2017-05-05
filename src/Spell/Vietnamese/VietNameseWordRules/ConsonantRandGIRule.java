@@ -26,7 +26,7 @@ public class ConsonantRandGIRule extends Rule {
 		
 		if((cons_str.equals("GI") || cons_str.equals("R"))&& vowel.length() >= 2){
 			
-			if(cons_str.equals("GI") && vowel.charAt(0)=='I')
+			if(cons_str.equals("GI") && vowel.charAt(0)=='I' && vowel.charAt(1)!='Ê')
 				return false;
 			
 			String diph = vowel.substring(0, 2);

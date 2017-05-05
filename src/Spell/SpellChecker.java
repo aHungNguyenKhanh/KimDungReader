@@ -34,7 +34,7 @@ public class SpellChecker {
 		System.out.println(checker.check("phoanh"));
 		System.out.println(checker.check("hải"));
 		System.out.println(checker.check("quốc"));
-		System.out.println(checker.check("giem"));
+		System.out.println(checker.check("ý"));
 		
 	}
 }

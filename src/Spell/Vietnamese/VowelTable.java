@@ -164,6 +164,7 @@ public class VowelTable extends HashMap<String, Vowel> {
 		this.put("IÊP", new Vowel("IÊP", new int[]{1}));
 		this.put("OP", new Vowel("OP", new int[]{0}));
 		this.put("OAP", new Vowel("OAP", new int[]{1}));
+		this.put("OÃP", new Vowel("OÃP", new int[]{1}));
 		this.put("ÔP", new Vowel("ÔP", new int[]{0}));
 		this.put("ÕP", new Vowel("ÕP", new int[]{0}));
 		this.put("UP", new Vowel("UP", new int[]{0}));

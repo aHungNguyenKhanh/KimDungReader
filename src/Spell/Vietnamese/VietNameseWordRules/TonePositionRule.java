@@ -17,9 +17,10 @@ public class TonePositionRule extends Rule {
 	public boolean checkValid(String x) {
 		
 		WordComponents comp = WordAnalyzer.get_instance().analyze(x);
-		
+
 		Vowel vowel = WordAnalyzer.get_instance().vowel_table.get(comp.vowel);
-		
+		if(x.equalsIgnoreCase("QUỆT"))
+			return true;
 		
 		return (vowel != null && vowel.check_tone_pos(comp.tone_pos) || comp.tone == Tone.UNMARK) ? true : false;
 	}

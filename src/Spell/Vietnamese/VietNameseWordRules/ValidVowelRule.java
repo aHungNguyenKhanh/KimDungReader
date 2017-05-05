@@ -17,6 +17,9 @@ public class ValidVowelRule extends Rule {
 		WordComponents comp = WordAnalyzer.get_instance().analyze(x);
 		
 		String vowel_str = comp.vowel;
+		if(x.equalsIgnoreCase("QUÊN") || x.equalsIgnoreCase("QUỆT"))
+			return true;
+		
 		Vowel cons = WordAnalyzer.get_instance().vowel_table.get(vowel_str);
 		
 		return cons != null ? true : false;
