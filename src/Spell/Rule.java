@@ -2,7 +2,8 @@ package Spell;
 
 abstract public class Rule {
 	
-	private int id;
+	public int id;
+	protected String msg;
 	
 	public Rule(int id){
 		this.id = id;
@@ -11,7 +12,7 @@ abstract public class Rule {
 	abstract public boolean checkValid(String x);
 	
 	public void show(){
-		System.out.println("Tu nay sai luat so [" + String.valueOf(id) + "]");
+		System.out.println("Tu nay sai luat so [" + String.valueOf(id) + "] " + msg);
 	}
 
 	

@@ -1,4 +1,4 @@
-package Spell.Vietnamese;
+package Spell.Vietnamese.VietNameseWordRules;
 
 import java.util.regex.Pattern;
 
@@ -10,6 +10,7 @@ public class ValidCharacterRule extends Rule {
 	
 	public ValidCharacterRule(int id) {
 		super(id);
+		this.msg = new String("Ky tu ko ton tai trong Tieng Viet");
 	}
 
 	@Override

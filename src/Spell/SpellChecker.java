@@ -25,10 +25,16 @@ public class SpellChecker {
 	}
 	
 	public static void main(String args[]){
-		String str = "Hung";
 		
 		SpellChecker checker = new SpellChecker(Language.VIETNAMESE);
 		
-		System.out.println(checker.check(str));
+		System.out.println(checker.check("Hoặt"));
+		System.out.println(checker.check("chích"));
+		System.out.println(checker.check("hoay"));
+		System.out.println(checker.check("phoanh"));
+		System.out.println(checker.check("hải"));
+		System.out.println(checker.check("quốc"));
+		System.out.println(checker.check("giem"));
+		
 	}
 }
