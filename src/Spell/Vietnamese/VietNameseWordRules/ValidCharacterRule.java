@@ -6,7 +6,7 @@ import Spell.Rule;
 
 public class ValidCharacterRule extends Rule {
 	
-	private String vietnamese_characters = "ẮẰẲẴẶĂẤẦẨẪẬÂÁÀÃẢẠĐẾỀỂỄỆÊÉÈẺẼẸÍÌỈĨỊỐỒỔỖỘÔỚỜỞỠỢƠÓÒÕỎỌỨỪỬỮỰƯÚÙỦŨỤÝỲỶỸỴ";
+	private String vietnamese_characters = "ẮẰẲẴẶĂẤẦẨẪẬÂÁÀÃẢẠĐÐẾỀỂỄỆÊÉÈẺẼẸÍÌỈĨỊỐỒỔỖỘÔỚỜỞỠỢƠÓÒÕỎỌỨỪỬỮỰƯÚÙỦŨỤÝỲỶỸỴ";
 	
 	public ValidCharacterRule(int id) {
 		super(id);

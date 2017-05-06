@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
 encoding//src/Spell/Rule.java=UTF-8
 encoding//src/Spell/SpellChecker.java=UTF-8
+encoding//src/Spell/Vietnamese/ConsonantTable.java=UTF-8
 encoding//src/Spell/Vietnamese/ToneTable.java=UTF-8
 encoding//src/Spell/Vietnamese/VietNameseWordRules/ConsonantCandQUandKRule.java=UTF-8
 encoding//src/Spell/Vietnamese/VietNameseWordRules/ConsonantNRule.java=UTF-8

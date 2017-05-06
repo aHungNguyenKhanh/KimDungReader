@@ -14,7 +14,8 @@ public class ConsonantTable extends HashMap<String, String> {
 		this.put("C", "C");
 		this.put("CH", "CH");
 		this.put("D",  "D");
-		this.put("�","�");
+		this.put("Đ","Đ");
+		this.put("Ð","Ð");
 		this.put("G",  "G");
 		this.put("GH","GH");
 		this.put("GI","GI");

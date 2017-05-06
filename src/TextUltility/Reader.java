@@ -37,7 +37,7 @@ public class Reader {
 	public static void main(String[] args) {
 		try{
 			SpellChecker checker = new SpellChecker(Language.VIETNAMESE);
-			Text text = Reader.get_instance().read("C://Users//Hung Nguyen//workspace//DecentReader//src//Kim Dung//Thiên Long Bát Bộ//Chúc Bạn Mấn Vân Hữu Cựu Minh.txt");
+			Text text = Reader.get_instance().read("C://Users//Hung Nguyen//workspace//DecentReader//src//Kim Dung//Lộc Đỉnh Ký//Bạch Long Sứ Chấp Chưởng Ngũ Long Lệnh.txt");
 //			text = new Text("Soa xoét hoi họ hè há hẩm hè hào hoa");
 			Seacher.get_instance().split_words(text);
 			for(TextWord i : text.word_list){
@@ -54,7 +54,11 @@ public class Reader {
 				System.out.println(text.word_list.get(i+1).getString());
 				System.out.println("...");
 			}
-			
+			File file = new File("C://Users//Hung Nguyen//workspace//DecentReader//src//Kim Dung//");
+			File[] chapters = file.listFiles();
+			for(File i : chapters){
+				System.out.println(i.getName());
+			}
 		} catch(Exception e){
 			e.printStackTrace();
 		}
